@@ -21,11 +21,11 @@ GameObject:
   - component: {fileID: 4561404884965812}
   - component: {fileID: 212171280912873018}
   - component: {fileID: 114353650705910552}
-  - component: {fileID: 114314969773989470}
+  - component: {fileID: 114165957645127686}
   - component: {fileID: 61771420257738992}
   - component: {fileID: 50403629071018680}
   m_Layer: 0
-  m_Name: Pear
+  m_Name: Donut
   m_TagString: Healthy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -89,7 +89,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114314969773989470
+--- !u!114 &114165957645127686
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,7 +147,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 93f797baaf77afb4aa5157c938b3cf8f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8d4c5fe116208ca4899375f88f835079, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

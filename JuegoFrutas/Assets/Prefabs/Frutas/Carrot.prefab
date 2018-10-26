@@ -21,11 +21,11 @@ GameObject:
   - component: {fileID: 4561404884965812}
   - component: {fileID: 212171280912873018}
   - component: {fileID: 114353650705910552}
-  - component: {fileID: 114314969773989470}
+  - component: {fileID: 114739261591126374}
   - component: {fileID: 61771420257738992}
   - component: {fileID: 50403629071018680}
   m_Layer: 0
-  m_Name: Pear
+  m_Name: Carrot
   m_TagString: Healthy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -89,17 +89,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114314969773989470
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1959464222822384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d652d590472274da3fb00072d296e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114353650705910552
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,6 +101,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallSpeed: 1
+--- !u!114 &114739261591126374
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959464222822384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d652d590472274da3fb00072d296e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212171280912873018
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -147,7 +147,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 93f797baaf77afb4aa5157c938b3cf8f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d71336f0373ef4c43ad7121274c9aaf9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

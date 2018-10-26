@@ -30,8 +30,7 @@ public class FoodSpawn : MonoBehaviour {
             yield return new WaitForSeconds(SpawnTime);
             randomSelect = Random.Range(0, food.Length);
             Instantiate(food[randomSelect],new Vector2(gameObject.transform.position.x,6),Quaternion.identity);
-            
-
+            yield return new WaitForSeconds(SpawnTime);
         }
     }
 }
