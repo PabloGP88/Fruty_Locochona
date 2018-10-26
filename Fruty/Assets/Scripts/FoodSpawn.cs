@@ -3,35 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FoodSpawn : MonoBehaviour {
-    [Header("VariablesGlobales")]
-    public bool inGame;
 
-    [Header("Food")]
-    public float SpawnTime;
-    public float minTime;
-    public float maxTime;
+
+
     public GameObject[] food;
-    int randomSelect;
+
+    int contador;
 
     // -----------------------------------------------------
-    void Start () {
-        // Spawn
-        StartCoroutine(Spawn());
+    void Start() {
+
+        
+
     }
 	
 	void Update () {
-        
-	}
-    IEnumerator Spawn()
-    {
-        while (true)
+        contador++;
+        if(contador >= 100) 
         {
-            SpawnTime = Random.Range(minTime, maxTime);
-            yield return new WaitForSeconds(SpawnTime);
-            randomSelect = Random.Range(0, food.Length);
-            Instantiate(food[randomSelect],new Vector2(gameObject.transform.position.x,6),Quaternion.identity);
-            
-
+            Instantiate(food[Random.Range(0, food.Length)],transform.position, Quaternion.identity);
+            contador = 0;
         }
-    }
+	}
+
+
 }

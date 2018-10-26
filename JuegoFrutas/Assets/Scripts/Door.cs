@@ -24,4 +24,7 @@ public class Door : MonoBehaviour {
             col.enabled = true;
         }
     }
+
+
+
 }

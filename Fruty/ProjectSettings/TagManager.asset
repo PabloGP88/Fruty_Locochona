@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Healthy
   - NoHealthy
+  - spawnLeft
+  - spawnRight
   layers:
   - Default
   - TransparentFX

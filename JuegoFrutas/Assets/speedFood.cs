@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FoodFall : MonoBehaviour {
+public class speedFood : MonoBehaviour {
 
     Rigidbody2D rb2d;
 
@@ -14,7 +14,7 @@ public class FoodFall : MonoBehaviour {
     {
         rb2d = GetComponent<Rigidbody2D>();
         sx = 1;
-        
+
     }
 
 
@@ -24,14 +24,14 @@ public class FoodFall : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D col)
-    {     
-     if(col.tag == "spawnRight")
+    {
+        if (col.tag == "spawnRight")
         {
             sx *= -1;
             Debug.Log("osjpowpwr");
         }
     }
 
-
+  
 
 }

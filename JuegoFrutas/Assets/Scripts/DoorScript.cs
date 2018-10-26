@@ -29,11 +29,19 @@ public class DoorScript : MonoBehaviour {
         }
     }
 
+
+
     void ReCheckDoors()
     {
         leftDoor = GameObject.Find("LeftDoor");
         rightDoor = GameObject.Find("RightDoor");
     }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        Destroy(col.gameObject);
+    }
+
     void EnableDisableDoors()
     {
         if (Input.GetKeyDown(KeyCode.Space) && leftDoor.GetComponent<SpriteRenderer>().color == colors[1])

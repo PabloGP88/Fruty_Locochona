@@ -20,11 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4561404884965812}
   - component: {fileID: 212171280912873018}
-  - component: {fileID: 114353650705910552}
-  - component: {fileID: 114314969773989470}
-  - component: {fileID: 114898528031691346}
   - component: {fileID: 61771420257738992}
   - component: {fileID: 50403629071018680}
+  - component: {fileID: 114269247041756410}
   m_Layer: 0
   m_Name: Pear
   m_TagString: Healthy
@@ -39,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1959464222822384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.10609884, y: -4.2979307, z: 0}
+  m_LocalScale: {x: 0.97358173, y: 0.97358173, z: 0.97358173}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -77,20 +75,20 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.070095986, y: -0.16969413}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.29904032, y: 0.44512677}
   m_EdgeRadius: 0
---- !u!114 &114314969773989470
+--- !u!114 &114269247041756410
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,33 +96,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1959464222822384}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d652d590472274da3fb00072d296e1, type: 3}
+  m_Script: {fileID: 11500000, guid: 506daa0a4d9d95644a866100c794af6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114353650705910552
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1959464222822384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b2b7f0482d1730438a4c42f8cbc8dba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fallSpeed: 1
---- !u!114 &114898528031691346
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1959464222822384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 213905abef281814a9f379ae7c6bda3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sugar: 0
+  sx: 0
 --- !u!212 &212171280912873018
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -160,7 +135,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 93f797baaf77afb4aa5157c938b3cf8f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a066e9ea6df5d3841bceba5e9488e89e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
