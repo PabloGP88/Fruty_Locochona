@@ -21,16 +21,7 @@ public class DoorScript : MonoBehaviour {
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && leftDoor.GetComponent<SpriteRenderer>().color == colors[1]) { 
-        leftDoor.GetComponent<SpriteRenderer>().color = colors[0];
-        rightDoor.GetComponent<SpriteRenderer>().color = colors[1];
-        }
-        else if (Input.GetKeyDown(KeyCode.Space) && leftDoor.GetComponent<SpriteRenderer>().color == colors[0])
-        {
-            leftDoor.GetComponent<SpriteRenderer>().color = colors[1];
-            rightDoor.GetComponent<SpriteRenderer>().color = colors[0];
-        }
-
+        EnableDisableDoors();
 
         if (leftDoor == null || rightDoor == null)
         {
@@ -42,5 +33,31 @@ public class DoorScript : MonoBehaviour {
     {
         leftDoor = GameObject.Find("LeftDoor");
         rightDoor = GameObject.Find("RightDoor");
+    }
+    void EnableDisableDoors()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && leftDoor.GetComponent<SpriteRenderer>().color == colors[1])
+        {
+            // Left Door
+            leftDoor.GetComponent<BoxCollider2D>().enabled = true;
+            leftDoor.GetComponent<SpriteRenderer>().color = colors[0];
+
+            // Right Door
+            rightDoor.GetComponent<BoxCollider2D>().enabled = false;
+            rightDoor.GetComponent<SpriteRenderer>().color = colors[1];
+            
+
+        }
+        else if (Input.GetKeyDown(KeyCode.Space) && leftDoor.GetComponent<SpriteRenderer>().color == colors[0])
+        {
+            // Left Door
+            leftDoor.GetComponent<BoxCollider2D>().enabled = false;
+            leftDoor.GetComponent<SpriteRenderer>().color = colors[1];
+
+            // Right Door
+            rightDoor.GetComponent<BoxCollider2D>().enabled = true;
+            rightDoor.GetComponent<SpriteRenderer>().color = colors[0];
+            
+        }
     }
 }
