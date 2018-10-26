@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212171280912873018}
   - component: {fileID: 114353650705910552}
   - component: {fileID: 114165957645127686}
+  - component: {fileID: 114904794725685396}
   - component: {fileID: 61771420257738992}
   - component: {fileID: 50403629071018680}
   m_Layer: 0
@@ -112,6 +113,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallSpeed: 1
+--- !u!114 &114904794725685396
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959464222822384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 213905abef281814a9f379ae7c6bda3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sugar: 0
 --- !u!212 &212171280912873018
 SpriteRenderer:
   m_ObjectHideFlags: 1
