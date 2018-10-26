@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 576b7ed750affcc4495468448b51b248
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: IBM Plex Sans ExtraLight
+  fontNames:
+  - IBM Plex Sans ExtraLight
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1323e287a0f69874b9b84954590d2c46, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: de8a3987aee989f4d91e3f72432245a8
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: IBM Plex Sans SemiBold
+  fontNames:
+  - IBM Plex Sans SemiBold
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d231290787109324da11f867a8d3ceac, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
