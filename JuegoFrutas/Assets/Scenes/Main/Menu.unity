@@ -696,7 +696,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 497813499}
   m_LocalRotation: {x: -0, y: -0, z: 0.15837328, w: 0.9873794}
-  m_LocalPosition: {x: -5.98, y: 0.15, z: 0}
+  m_LocalPosition: {x: -5.98, y: 0.15, z: 65.5}
   m_LocalScale: {x: 2.388879, y: 2.4636314, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -771,7 +771,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 742430168}
   m_LocalRotation: {x: -0, y: -0, z: -0.1077705, w: 0.99417585}
-  m_LocalPosition: {x: 4.88, y: -2.59, z: 1}
+  m_LocalPosition: {x: 4.88, y: -2.59, z: -8.46}
   m_LocalScale: {x: 2.5513227, y: 2.648404, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -991,7 +991,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 899987171}
   m_LocalRotation: {x: -0, y: -0, z: 0.1499397, w: 0.98869514}
-  m_LocalPosition: {x: -4.2880187, y: -0.57548064, z: -5}
+  m_LocalPosition: {x: -4.2880187, y: -0.57548064, z: 60.5}
   m_LocalScale: {x: 0.550705, y: 0.550705, z: 0.550705}
   m_Children: []
   m_Father: {fileID: 1320175497}
@@ -1149,17 +1149,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1022844511}
-  m_LocalRotation: {x: -0, y: -0, z: -0.0153377885, w: 0.9998824}
+  m_LocalRotation: {x: -0, y: -0, z: -0.073054254, w: 0.997328}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3932604, y: 0.3932604, z: 0.3932604}
   m_Children: []
   m_Father: {fileID: 1243590085}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.7580001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -8.379001}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 355, y: 64}
-  m_SizeDelta: {x: 563.4, y: 134}
+  m_AnchoredPosition: {x: 355, y: 40.500015}
+  m_SizeDelta: {x: 563.4, y: 181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1022844513
 MonoBehaviour:
@@ -1207,7 +1207,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "La primera hamburgesa \nfue creada en 1885."
+  m_Text: "La Coca-Cola tiene el 265% \nde ingesta diaria de azucar\nen un menor de
+    edad."
 --- !u!222 &1022844515
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1267,7 +1268,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 57940045d725e8244a1bc81bf5600893, type: 3}
-  m_Color: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 1}
+  m_Color: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1480,7 +1481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.966}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -177, y: 64.7}
+  m_AnchoredPosition: {x: -149, y: 61}
   m_SizeDelta: {x: 563.4, y: 134}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1321335442
@@ -1627,7 +1628,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1591804201}
   m_LocalRotation: {x: -0, y: -0, z: -0.07485633, w: 0.9971944}
-  m_LocalPosition: {x: 5.351981, y: -3.0254805, z: -2.3671875}
+  m_LocalPosition: {x: 5.351981, y: -3.0254805, z: -11.827188}
   m_LocalScale: {x: 0.4299645, y: 0.4299645, z: 0.4299645}
   m_Children: []
   m_Father: {fileID: 1320175497}
@@ -1656,8 +1657,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac09a51e0e0c434191d7809205968d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popSound: {fileID: 0}
-  textToShow: {fileID: 0}
+  popSound: {fileID: 898261794}
+  textToShow: {fileID: 1740712675}
 --- !u!1 &1608726003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1767,7 +1768,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1640899415}
   m_LocalRotation: {x: -0, y: -0, z: 0.00043593513, w: 0.99999994}
-  m_LocalPosition: {x: 3.78, y: 0.89, z: 1}
+  m_LocalPosition: {x: 3.78, y: 0.89, z: 54}
   m_LocalScale: {x: 1.5381323, y: 1.6782873, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1896,8 +1897,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.4880004}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 116, y: -201}
-  m_SizeDelta: {x: 563.4, y: 134}
+  m_AnchoredPosition: {x: 100, y: -196}
+  m_SizeDelta: {x: 603.4, y: 138.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1740712674
 MonoBehaviour:
@@ -1945,7 +1946,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "La primera hamburgesa \nfue creada en 1885."
+  m_Text: 'Un luchachador de sumo
+
+    ingiere 20,000 kcal diaria'
 --- !u!222 &1740712676
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2101,7 +2104,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 77743d12cb478924984735e7946f45db, type: 3}
-    m_FontSize: 61
+    m_FontSize: 52
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -2112,7 +2115,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Block Food
+  m_Text: Food Blocker
 --- !u!222 &1883304932
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2304,6 +2307,7 @@ GameObject:
   - component: {fileID: 2077416869}
   - component: {fileID: 2077416868}
   - component: {fileID: 2077416871}
+  - component: {fileID: 2077416872}
   m_Layer: 0
   m_Name: sugar
   m_TagString: Untagged
@@ -2382,7 +2386,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2077416867}
   m_LocalRotation: {x: -0, y: -0, z: 0.29199925, w: 0.9564186}
-  m_LocalPosition: {x: 5.3, y: 0.19, z: -2.3671875}
+  m_LocalPosition: {x: 5.3, y: 0.19, z: 50.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1320175497}
@@ -2399,5 +2403,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac09a51e0e0c434191d7809205968d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popSound: {fileID: 0}
-  textToShow: {fileID: 0}
+  popSound: {fileID: 898261794}
+  textToShow: {fileID: 1022844514}
+--- !u!61 &2077416872
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2077416867}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.02351576, y: 0.012686521}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.48}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.93688834, y: 1.0273938}
+  m_EdgeRadius: 0
