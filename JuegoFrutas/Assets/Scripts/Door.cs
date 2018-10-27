@@ -6,6 +6,7 @@ public class Door : MonoBehaviour {
     Color[] colors; // 0 Rojo, 1 verde
     Color color;
     BoxCollider2D col;
+
 	// Use this for initialization
 	void Start () {
         colors = DoorScript.FindObjectOfType<DoorScript>().colors;
@@ -15,14 +16,12 @@ public class Door : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (color == colors[0])
-        {
-            col.enabled = false;
-        }
-        if (color == colors[1])
-        {
-            col.enabled = true;
-        }
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        Destroy(col.gameObject);
     }
 
 

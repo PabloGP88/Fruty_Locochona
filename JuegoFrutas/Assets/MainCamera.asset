@@ -69,10 +69,10 @@ MonoBehaviour:
       screenEdgeMask:
         intensity: 0.03
   depthOfField:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       focusDistance: 10
-      aperture: 5.6
+      aperture: 1.5
       focalLength: 50
       useCameraFov: 0
       kernelSize: 1
@@ -81,7 +81,7 @@ MonoBehaviour:
     m_Settings:
       shutterAngle: 270
       sampleCount: 10
-      frameBlending: 0.2
+      frameBlending: 0.411
   eyeAdaptation:
     m_Enabled: 0
     m_Settings:
@@ -109,7 +109,7 @@ MonoBehaviour:
         texture: {fileID: 0}
         intensity: 3
   colorGrading:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       tonemapping:
         tonemapper: 2
@@ -134,7 +134,7 @@ MonoBehaviour:
       colorWheels:
         mode: 1
         log:
-          slope: {r: 1, g: 1, b: 1, a: 0}
+          slope: {r: 0.73611164, g: 0.64147484, b: 1, a: -0.06434316}
           power: {r: 1, g: 1, b: 1, a: 0}
           offset: {r: 1, g: 1, b: 1, a: 0}
         linear:
@@ -320,10 +320,10 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       mode: 0
-      color: {r: 0, g: 0.44777822, b: 1, a: 1}
+      color: {r: 0, g: 0.44705915, b: 1, a: 1}
       center: {x: 0.5, y: 0.5}
       intensity: 0.411
-      smoothness: 0.2
+      smoothness: 0.176
       roundness: 1
       mask: {fileID: 0}
       opacity: 1

@@ -27,9 +27,14 @@ public class pointSystem : MonoBehaviour {
 
         if (col.gameObject.tag == "Chatarra")
         {
-            /// restar vida
+            lifeStats.FindObjectOfType<lifeStats>().vida -= 1; 
         }
 
+        // Aumenta StatsPlayer
+         lifeStats.FindObjectOfType<lifeStats>().calorias += col.gameObject.GetComponent<FoodStat>().calorias; // Calorias
+         lifeStats.FindObjectOfType<lifeStats>().azucar += col.gameObject.GetComponent<FoodStat>().azucar; // Azucar
+         lifeStats.FindObjectOfType<lifeStats>().grasa += col.gameObject.GetComponent<FoodStat>().grasa; // Grasa
+         Destroy(col.gameObject);
     }
 
 }
