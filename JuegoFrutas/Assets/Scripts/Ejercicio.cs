@@ -22,8 +22,8 @@ public class Ejercicio : MonoBehaviour
         if (Input.GetKeyDown("left") && cambia == false && lifeStats.FindObjectOfType<lifeStats>().calorias >0 && lifeStats.FindObjectOfType<lifeStats>().grasa >0 && lifeStats.FindObjectOfType<lifeStats>().stamina >= 10)
         {
             Debug.Log("Left Arrow");
+            Instantiate(particulaPesa, particulaSpawn.transform.position, Quaternion.Euler(-90, 0, -90));
             cambia = true;
-
             RestarStats();
             
         }
@@ -31,7 +31,7 @@ public class Ejercicio : MonoBehaviour
         if (Input.GetKeyDown("right")&& cambia == true && lifeStats.FindObjectOfType<lifeStats>().calorias > 0 && lifeStats.FindObjectOfType<lifeStats>().grasa > 0 && lifeStats.FindObjectOfType<lifeStats>().stamina >= 10)
         {
             Debug.Log("Right Arrow");
-            Instantiate(particulaPesa, particulaSpawn.transform.position, Quaternion.identity);
+            Instantiate(particulaPesa, particulaSpawn.transform.position, Quaternion.Euler(-90,0,-90));
             cambia = false;
             RestarStats();
             
