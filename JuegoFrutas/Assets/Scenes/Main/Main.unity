@@ -1964,7 +1964,8 @@ ParticleSystem:
     flipV: 0
     randomRow: 1
     sprites:
-    - sprite: {fileID: 21300000, guid: e433872996a4baf4e90864e01f3c2ae6, type: 3}
+    - sprite: {fileID: 21300000, guid: cc52fa1e77b1c564488efb966895df4f, type: 3}
+    - sprite: {fileID: 21300000, guid: 19bb53e9e4a30844c8b59da3fe2b36e6, type: 3}
   VelocityModule:
     enabled: 0
     x:
@@ -5519,7 +5520,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -6206,7 +6207,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4324948996152692, guid: 13a1b92c74cda4546983fc89e70fe852, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 11.06
+      value: 12.12
       objectReference: {fileID: 0}
     - target: {fileID: 4324948996152692, guid: 13a1b92c74cda4546983fc89e70fe852, type: 2}
       propertyPath: m_LocalPosition.y
@@ -6243,6 +6244,10 @@ Prefab:
     - target: {fileID: 4001608329318010, guid: 13a1b92c74cda4546983fc89e70fe852, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4001608329318010, guid: 13a1b92c74cda4546983fc89e70fe852, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.409
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13a1b92c74cda4546983fc89e70fe852, type: 2}
@@ -6419,7 +6424,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4156443891984578, guid: 66fe61f2620df5a488ff5220fb142e60, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.15
+      value: 3.23
       objectReference: {fileID: 0}
     - target: {fileID: 4156443891984578, guid: 66fe61f2620df5a488ff5220fb142e60, type: 2}
       propertyPath: m_LocalPosition.z
