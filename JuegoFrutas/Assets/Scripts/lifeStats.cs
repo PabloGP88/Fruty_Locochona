@@ -5,14 +5,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class lifeStats : MonoBehaviour {
+<<<<<<< HEAD
 
 
+=======
+    int x = 0;
+>>>>>>> 4652001ae6e4df7b2e499d45169568e1715311fb
     public int vida;
     public int azucar;
     public int grasa;
     public int calorias;
     public int stamina;
     [Header("ImagenesEnfermedades")]
+    public AudioSource sonidoVirus;
     public GameObject imagenDiabetes;
     public GameObject imagenColesterol;
     public GameObject imagenObesidad;
@@ -63,7 +68,7 @@ public class lifeStats : MonoBehaviour {
         }
         if (grasa > grasaMax)
         {
-            imagenColesterol.GetComponent<Image>().color = Color.white;
+            imagenColesterol.GetComponent<Image>().color = Color.white;   
             // colesterolText.enabled = true;
             colesterol = true;
 
@@ -78,7 +83,7 @@ public class lifeStats : MonoBehaviour {
         }
         if (calorias < caloriasMax)
         {
-            imagenObesidad.GetComponent<Image>().color = Color.gray;
+            imagenObesidad.GetComponent<Image>().color = Color.grey;
             // obesidadText.enabled = false;
             IncreaseSpeed.FindObjectOfType<IncreaseSpeed>().limite = 5;
             obesidad = false;
@@ -87,33 +92,33 @@ public class lifeStats : MonoBehaviour {
         Diabetes();
         Colesterol();
         Obesidad();
+
     }
 
     void Diabetes()
     {
-        if (diabetes == true)
+        if (diabetes == true && x==0)
         {
-            CameraShake.FindObjectOfType<CameraShake>().shake = true;
-
+             CameraShake.FindObjectOfType<CameraShake>().shake = true;
         }
 
     }
 
     void Colesterol()
     {
-        if(colesterol == true)
+        if (colesterol == true)
         {
-
-
         }
     }
 
     void Obesidad()
     {
-        if (obesidad == true)
+  
+        if (obesidad == true&& x ==0)
         {
 
-        }else if (obesidad == false)
+        }
+        else if (obesidad == false)
         {
 
         }
