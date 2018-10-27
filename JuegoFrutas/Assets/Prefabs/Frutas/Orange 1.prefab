@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212171280912873018}
   - component: {fileID: 61771420257738992}
   - component: {fileID: 50403629071018680}
+  - component: {fileID: 114379195641568554}
   - component: {fileID: 114710805416472572}
   m_Layer: 0
   m_Name: Orange 1
@@ -88,6 +89,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.48084447, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114379195641568554
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959464222822384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ca23b5e13842d34e8382a542bdfc6da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  azucar: 11
+  grasa: 0
+  calorias: 60
 --- !u!114 &114710805416472572
 MonoBehaviour:
   m_ObjectHideFlags: 1

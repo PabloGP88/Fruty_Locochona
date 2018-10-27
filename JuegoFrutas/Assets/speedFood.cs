@@ -28,7 +28,7 @@ public class speedFood : MonoBehaviour {
         if (col.tag == "spawnRight")
         {
             sx *= -1;
-            Debug.Log("osjpowpwr");
+
         }
     }
 

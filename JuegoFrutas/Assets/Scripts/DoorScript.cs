@@ -7,6 +7,7 @@ public class DoorScript : MonoBehaviour {
     [SerializeField]public Color[] colors; // 0 Rojo, 1 verde
     GameObject leftDoor;
     GameObject rightDoor;
+    bool cambio;
 
     
 
@@ -37,14 +38,14 @@ public class DoorScript : MonoBehaviour {
         rightDoor = GameObject.Find("RightDoor");
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
         Destroy(col.gameObject);
     }
 
     void EnableDisableDoors()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && leftDoor.GetComponent<SpriteRenderer>().color == colors[1])
+        if (Input.GetKeyDown(KeyCode.Space) && cambio == false)
         {
             // Left Door
             leftDoor.GetComponent<BoxCollider2D>().enabled = true;
@@ -53,10 +54,10 @@ public class DoorScript : MonoBehaviour {
             // Right Door
             rightDoor.GetComponent<BoxCollider2D>().enabled = false;
             rightDoor.GetComponent<SpriteRenderer>().color = colors[1];
-            
+            cambio = true;
 
         }
-        else if (Input.GetKeyDown(KeyCode.Space) && leftDoor.GetComponent<SpriteRenderer>().color == colors[0])
+        else if (Input.GetKeyDown(KeyCode.Space) && cambio == true)
         {
             // Left Door
             leftDoor.GetComponent<BoxCollider2D>().enabled = false;
@@ -65,7 +66,7 @@ public class DoorScript : MonoBehaviour {
             // Right Door
             rightDoor.GetComponent<BoxCollider2D>().enabled = true;
             rightDoor.GetComponent<SpriteRenderer>().color = colors[0];
-            
+            cambio = false;
         }
     }
 }

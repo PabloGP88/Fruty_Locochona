@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212016718421482442}
   - component: {fileID: 61356325379269780}
   - component: {fileID: 50572105110408952}
+  - component: {fileID: 114586141860682820}
   - component: {fileID: 114015390816369278}
   m_Layer: 0
   m_Name: Apple
@@ -100,6 +101,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sx: 0
+--- !u!114 &114586141860682820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1801004291580716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ca23b5e13842d34e8382a542bdfc6da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  azucar: 2
+  grasa: 0
+  calorias: 87
 --- !u!212 &212016718421482442
 SpriteRenderer:
   m_ObjectHideFlags: 1

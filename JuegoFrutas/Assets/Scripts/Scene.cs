@@ -12,7 +12,7 @@ public class Scene : MonoBehaviour {
     public void ExitGame()
     {
         Application.Quit();
-    }
+    }   
     public void SceneToLoad(string Scene)
     {
         SceneManager.LoadScene(Scene);
