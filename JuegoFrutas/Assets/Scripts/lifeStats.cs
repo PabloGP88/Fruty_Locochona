@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class lifeStats : MonoBehaviour {
+
 
     public int vida;
     public int azucar;
@@ -39,6 +41,7 @@ public class lifeStats : MonoBehaviour {
 	void Update () {
         limiteCantidad();
         Enfermedades();
+        GameOver();
             }
 
     IEnumerator AumentarStamina() {
@@ -56,12 +59,14 @@ public class lifeStats : MonoBehaviour {
             //  diabetesText.enabled = true;
             imagenDiabetes.GetComponent<Image>().color = Color.white;
               diabetes = true;
+
         }
         if (grasa > grasaMax)
         {
             imagenColesterol.GetComponent<Image>().color = Color.white;
             // colesterolText.enabled = true;
             colesterol = true;
+
         }
         if (calorias > caloriasMax)
         {
@@ -69,6 +74,7 @@ public class lifeStats : MonoBehaviour {
             // obesidadText.enabled = true;
             IncreaseSpeed.FindObjectOfType<IncreaseSpeed>().limite = 7;
             obesidad = true;
+
         }
         if (calorias < caloriasMax)
         {
@@ -76,6 +82,7 @@ public class lifeStats : MonoBehaviour {
             // obesidadText.enabled = false;
             IncreaseSpeed.FindObjectOfType<IncreaseSpeed>().limite = 5;
             obesidad = false;
+
         }
         Diabetes();
         Colesterol();
@@ -133,5 +140,18 @@ public class lifeStats : MonoBehaviour {
             stamina = 100;
         }
 
+    }
+
+    void GameOver()
+    {
+        if (colesterol == true && diabetes == true)
+        {
+            SceneManager.LoadScene("Main");
+        }
+
+        else if (calorias > caloriasMax+500)
+        {
+            SceneManager.LoadScene("Main");
+        }
     }
 }
