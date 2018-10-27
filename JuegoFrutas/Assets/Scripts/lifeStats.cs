@@ -32,6 +32,10 @@ public class lifeStats : MonoBehaviour {
     public Text diabetesText;
     public Text obesidadText;
 
+    [Header("Animacion")]
+    public Animation LoseAnimation;
+    public Animation LoseAnimationDown;
+
     // Use this for initialization
     void Start () {
         vida = 100;
@@ -146,14 +150,19 @@ public class lifeStats : MonoBehaviour {
 
     void GameOver()
     {
-        if (colesterol == true && diabetes == true)
+
+        if (colesterol == true && diabetes == true && x == 0)
         {
-            SceneManager.LoadScene("Main");
+            LoseAnimation.Play();
+            LoseAnimationDown.Play();
+            x += 1;
         }
 
-        else if (calorias > caloriasMax+500)
+        else if (calorias > caloriasMax+500 && x == 0)
         {
-            SceneManager.LoadScene("Main");
+            LoseAnimation.Play();
+            LoseAnimationDown.Play();
+            x += 1;
         }
     }
 }

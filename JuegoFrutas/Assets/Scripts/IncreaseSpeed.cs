@@ -6,7 +6,7 @@ public class IncreaseSpeed : MonoBehaviour {
     public int limite = 5;
 	// Use this for initialization
 	void Start () {
-		
+        Time.timeScale = 1;
 	}
 	
 	// Update is called once per frame
