@@ -5,12 +5,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class lifeStats : MonoBehaviour {
-<<<<<<< HEAD
 
-
-=======
     int x = 0;
->>>>>>> 4652001ae6e4df7b2e499d45169568e1715311fb
+
     public int vida;
     public int azucar;
     public int grasa;
@@ -140,7 +137,7 @@ public class lifeStats : MonoBehaviour {
         }
         if (stamina <= 0){
             stamina = 0;
-        }else if (stamina >= 100)
+        }else if (stamina > 99)
         {
             stamina = 100;
         }
