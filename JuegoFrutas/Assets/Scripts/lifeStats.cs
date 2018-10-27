@@ -6,9 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class lifeStats : MonoBehaviour {
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> c85fdfcc1370dcd599cbef3e50de1acd041fd07c
     int x = 0;
 
     public int vida;
@@ -34,6 +37,10 @@ public class lifeStats : MonoBehaviour {
     public Text colesterolText;
     public Text diabetesText;
     public Text obesidadText;
+
+    [Header("Animacion")]
+    public Animation LoseAnimation;
+    public Animation LoseAnimationDown;
 
     // Use this for initialization
     void Start () {
@@ -140,7 +147,7 @@ public class lifeStats : MonoBehaviour {
         }
         if (stamina <= 0){
             stamina = 0;
-        }else if (stamina >= 100)
+        }else if (stamina > 99)
         {
             stamina = 100;
         }
@@ -149,14 +156,19 @@ public class lifeStats : MonoBehaviour {
 
     void GameOver()
     {
-        if (colesterol == true && diabetes == true)
+
+        if (colesterol == true && diabetes == true && x == 0)
         {
-            SceneManager.LoadScene("Main");
+            LoseAnimation.Play();
+            LoseAnimationDown.Play();
+            x += 1;
         }
 
-        else if (calorias > caloriasMax+500)
+        else if (calorias > caloriasMax+500 && x == 0)
         {
-            SceneManager.LoadScene("Main");
+            LoseAnimation.Play();
+            LoseAnimationDown.Play();
+            x += 1;
         }
     }
 }
