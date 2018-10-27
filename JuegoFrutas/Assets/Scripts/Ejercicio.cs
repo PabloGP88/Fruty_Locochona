@@ -41,7 +41,7 @@ public class Ejercicio : MonoBehaviour
     }
     void RestarStats() {
         lifeStats.FindObjectOfType<lifeStats>().calorias -= restaCalorias;// Calorias
-        lifeStats.FindObjectOfType<lifeStats>().grasa -= restaGrasa;// Grasa
+        // lifeStats.FindObjectOfType<lifeStats>().grasa -= restaGrasa;// Grasa
         lifeStats.FindObjectOfType<lifeStats>().stamina -= restaStamina;
     }
 }
