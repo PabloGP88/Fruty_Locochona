@@ -1050,7 +1050,7 @@ GameObject:
   - component: {fileID: 1087262473}
   - component: {fileID: 1087262472}
   m_Layer: 5
-  m_Name: Pizza
+  m_Name: Grasa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1095,7 +1095,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 77a6c4962030c7449912e399836a597a, type: 3}
-    m_FontSize: 56
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1106,7 +1106,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: La grasa corporal normal es abajo de 20
 --- !u!222 &1087262473
 CanvasRenderer:
   m_ObjectHideFlags: 0
