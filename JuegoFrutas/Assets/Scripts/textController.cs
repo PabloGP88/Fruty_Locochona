@@ -9,13 +9,14 @@ public class textController : MonoBehaviour {
     string frase_1 = "México es el primer lugar en obesidad infantil";
     string frase_2 = "6 de cada 10 adultos en México tiene problemas de sobrepeso";
     string frase_3 = "1 de cada 5 muertes en México es causada por diabetes";
+    string frase_4 = "La principal fuente de energía son las calorías";
 
     int seleccion;
 
     // Use this for initialization
     void Start()
     {
-        int seleccion = (int)Random.Range(1, 3);
+        int seleccion = (int)Random.Range(1, 6);
 
         if (seleccion == 1)
         {
