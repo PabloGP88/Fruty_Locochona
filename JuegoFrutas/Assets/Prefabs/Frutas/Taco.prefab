@@ -22,11 +22,11 @@ GameObject:
   - component: {fileID: 212171280912873018}
   - component: {fileID: 61771420257738992}
   - component: {fileID: 50403629071018680}
-  - component: {fileID: 114586878853358246}
+  - component: {fileID: 114310830007260856}
   - component: {fileID: 114269247041756410}
   m_Layer: 0
-  m_Name: Burger
-  m_TagString: Chatarra
+  m_Name: Taco
+  m_TagString: Healthy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,13 +37,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1959464222822384}
-  m_LocalRotation: {x: -0, y: -0, z: 0.082812205, w: 0.99656516}
-  m_LocalPosition: {x: -4.8593144, y: 2.9522538, z: 0}
-  m_LocalScale: {x: 0.41377184, y: 0.41377184, z: 0.41377184}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.369749, y: -2.4865773, z: 0}
+  m_LocalScale: {x: 1.2451917, y: 1.5927026, z: 1.6623613}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 9.5}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &50403629071018680
 Rigidbody2D:
   serializedVersion: 4
@@ -76,18 +76,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.020528942, y: 0}
+  m_Offset: {x: 0.033874482, y: -0.005153641}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.12, y: 5.12}
+    oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.45598185, y: 1}
+  m_Size: {x: 0.35856843, y: 0.3559337}
   m_EdgeRadius: 0
 --- !u!114 &114269247041756410
 MonoBehaviour:
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sx: 0
---- !u!114 &114586878853358246
+--- !u!114 &114310830007260856
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,9 +112,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ca23b5e13842d34e8382a542bdfc6da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  azucar: -25
+  azucar: -5
   grasa: 20
-  calorias: 144
+  calorias: 150
   stamina: 0
 --- !u!212 &212171280912873018
 SpriteRenderer:
@@ -151,7 +151,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ff001f5a743797d4a85238b1a71070d4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e547b537e1f9ac640b69ca2bb3f45936, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

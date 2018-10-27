@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ca23b5e13842d34e8382a542bdfc6da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  azucar: 0
+  azucar: -20
   grasa: -5
   calorias: 70
   stamina: 10
