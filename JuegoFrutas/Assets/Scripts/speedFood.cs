@@ -6,20 +6,21 @@ public class speedFood : MonoBehaviour {
 
     Rigidbody2D rb2d;
 
-    public int sx;
+    public float sx;
 
     bool inverse;
 
     private void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        sx = 1;
+        sx = 3;
 
     }
 
 
     private void Update()
     {
+        
         rb2d.velocity = new Vector2(sx, 0);
     }
 

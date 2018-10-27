@@ -8,6 +8,7 @@ public class lifeStats : MonoBehaviour {
     public int azucar;
     public int grasa;
     public int calorias;
+    public int stamina;
     public bool Colesterol;
     public bool Diabetes;
     public bool Obesidad;
@@ -15,11 +16,13 @@ public class lifeStats : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         vida = 100;
+        stamina = 100;
 	}
 	
 	// Update is called once per frame
 	void Update () {
         limiteCantidad();
+        stamina += (int)(1 * Time.deltaTime);
     }
 
     void limiteCantidad()

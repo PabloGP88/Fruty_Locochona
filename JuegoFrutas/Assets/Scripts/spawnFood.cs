@@ -6,8 +6,9 @@ public class spawnFood : MonoBehaviour {
 
 
     public GameObject[] food;
+    float tiempo1 = 300;
+    
 
-    int[] spawnValues = new int[] { 400,500,300};
 
     int contador;
 
@@ -21,11 +22,17 @@ public class spawnFood : MonoBehaviour {
 
     void Update()
     {
+
         contador++;
-        if (contador >= spawnValues[Random.Range(0, spawnValues.Length)])
+        if (tiempo1 > 100)
+        {
+            tiempo1 -= 2f * Time.deltaTime;
+        }
+        if (contador >= tiempo1)
         {
             Instantiate(food[Random.Range(0, food.Length)], transform.position, Quaternion.identity);
             contador = 0;
+
         }
     }
 

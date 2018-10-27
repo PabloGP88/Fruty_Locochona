@@ -7,6 +7,7 @@ public class Ejercicio : MonoBehaviour
     bool cambia = false;
     public int restaCalorias;
     public int restaGrasa;
+    public int restaStamina;
     // Use this for initialization
     void Start()
     {
@@ -16,14 +17,14 @@ public class Ejercicio : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("left") && cambia == false && lifeStats.FindObjectOfType<lifeStats>().calorias >0 && lifeStats.FindObjectOfType<lifeStats>().grasa >0)
+        if (Input.GetKeyDown("left") && cambia == false && lifeStats.FindObjectOfType<lifeStats>().calorias >0 && lifeStats.FindObjectOfType<lifeStats>().grasa >0 && lifeStats.FindObjectOfType<lifeStats>().stamina >= 0)
         {
             Debug.Log("Left Arrow");
             cambia = true;
             RestarStats();
         }
 
-        if (Input.GetKeyDown("right")&& cambia == true && lifeStats.FindObjectOfType<lifeStats>().calorias > 0 && lifeStats.FindObjectOfType<lifeStats>().grasa > 0)
+        if (Input.GetKeyDown("right")&& cambia == true && lifeStats.FindObjectOfType<lifeStats>().calorias > 0 && lifeStats.FindObjectOfType<lifeStats>().grasa > 0 && lifeStats.FindObjectOfType<lifeStats>().stamina >= 0)
         {
             Debug.Log("Right Arrow");
             cambia = false;
@@ -35,5 +36,6 @@ public class Ejercicio : MonoBehaviour
     void RestarStats() {
         lifeStats.FindObjectOfType<lifeStats>().calorias -= restaCalorias;// Calorias
         lifeStats.FindObjectOfType<lifeStats>().grasa -= restaGrasa;// Grasa
+        lifeStats.FindObjectOfType<lifeStats>().stamina -= restaStamina;
     }
 }
