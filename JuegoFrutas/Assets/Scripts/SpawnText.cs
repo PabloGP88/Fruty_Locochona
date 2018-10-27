@@ -4,16 +4,22 @@ using UnityEngine.UI;
 using UnityEngine;
 
 public class SpawnText : MonoBehaviour {
-
+    public AudioSource popSound;
     public Text textToShow ;
 
     private void Start()
     {
         textToShow.enabled = false;
     }
+    private void OnMouseEnter()
+    {
+        popSound.Play();
+    }
     private void OnMouseOver()
     {
-        textToShow.enabled = true; 
+        
+        textToShow.enabled = true;
+
     }
     private void OnMouseExit()
     {
