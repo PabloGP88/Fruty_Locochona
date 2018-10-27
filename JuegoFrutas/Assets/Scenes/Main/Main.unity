@@ -1429,7 +1429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   restaCalorias: 10
   restaGrasa: 1
-  restaStamina: 10
+  restaStamina: 5
   particulaPesa: {fileID: 198799514126711996, guid: 8915487ca9347d4409bd9e827e2d7f0c,
     type: 2}
   particulaSpawn: {fileID: 1122417041774810, guid: 8915487ca9347d4409bd9e827e2d7f0c,
@@ -1770,7 +1770,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d62d07e922f195547bc15ed976265d15, type: 3}
-  m_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
+  m_Color: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3194,13 +3194,28 @@ Prefab:
     - target: {fileID: 114155818777449392, guid: 61de566e211b75c40b12a7fc804af1ed,
         type: 2}
       propertyPath: caloriasMax
-      value: 2500
+      value: 3000
       objectReference: {fileID: 0}
     - target: {fileID: 114155818777449392, guid: 61de566e211b75c40b12a7fc804af1ed,
         type: 2}
       propertyPath: grasaMax
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 114155818777449392, guid: 61de566e211b75c40b12a7fc804af1ed,
+        type: 2}
+      propertyPath: imagenObesidad
+      value: 
+      objectReference: {fileID: 527246339}
+    - target: {fileID: 114155818777449392, guid: 61de566e211b75c40b12a7fc804af1ed,
+        type: 2}
+      propertyPath: imagenColesterol
+      value: 
+      objectReference: {fileID: 812952270}
+    - target: {fileID: 114155818777449392, guid: 61de566e211b75c40b12a7fc804af1ed,
+        type: 2}
+      propertyPath: imagenDiabetes
+      value: 
+      objectReference: {fileID: 2075730233}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61de566e211b75c40b12a7fc804af1ed, type: 2}
   m_IsPrefabAsset: 0
