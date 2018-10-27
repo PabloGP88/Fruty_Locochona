@@ -8,6 +8,8 @@ public class Ejercicio : MonoBehaviour
     public int restaCalorias;
     public int restaGrasa;
     public int restaStamina;
+    public ParticleSystem particulaPesa;
+    public GameObject particulaSpawn;
     // Use this for initialization
     void Start()
     {
@@ -17,18 +19,22 @@ public class Ejercicio : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("left") && cambia == false && lifeStats.FindObjectOfType<lifeStats>().calorias >0 && lifeStats.FindObjectOfType<lifeStats>().grasa >0 && lifeStats.FindObjectOfType<lifeStats>().stamina >= 0)
+        if (Input.GetKeyDown("left") && cambia == false && lifeStats.FindObjectOfType<lifeStats>().calorias >0 && lifeStats.FindObjectOfType<lifeStats>().grasa >0 && lifeStats.FindObjectOfType<lifeStats>().stamina >= 10)
         {
             Debug.Log("Left Arrow");
             cambia = true;
+
             RestarStats();
+            
         }
 
-        if (Input.GetKeyDown("right")&& cambia == true && lifeStats.FindObjectOfType<lifeStats>().calorias > 0 && lifeStats.FindObjectOfType<lifeStats>().grasa > 0 && lifeStats.FindObjectOfType<lifeStats>().stamina >= 0)
+        if (Input.GetKeyDown("right")&& cambia == true && lifeStats.FindObjectOfType<lifeStats>().calorias > 0 && lifeStats.FindObjectOfType<lifeStats>().grasa > 0 && lifeStats.FindObjectOfType<lifeStats>().stamina >= 10)
         {
             Debug.Log("Right Arrow");
+            Instantiate(particulaPesa, particulaSpawn.transform.position, Quaternion.identity);
             cambia = false;
             RestarStats();
+            
         }
 
 

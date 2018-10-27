@@ -17,14 +17,21 @@ public class lifeStats : MonoBehaviour {
 	void Start () {
         vida = 100;
         stamina = 100;
+        StartCoroutine(AumentarStamina());
 	}
 	
 	// Update is called once per frame
 	void Update () {
         limiteCantidad();
-        stamina += (int)(1 * Time.deltaTime);
-    }
+            }
 
+    IEnumerator AumentarStamina() {
+        while (true)
+        {
+            yield return new WaitForSeconds(0.5f);
+            stamina += 1;
+        }
+    }
     void limiteCantidad()
     {
 
@@ -40,5 +47,12 @@ public class lifeStats : MonoBehaviour {
         {
             calorias = 0;
         }
+        if (stamina <= 0){
+            stamina = 0;
+        }else if (stamina >= 100)
+        {
+            stamina = 100;
+        }
+
     }
 }

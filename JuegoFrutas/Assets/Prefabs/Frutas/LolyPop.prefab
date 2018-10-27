@@ -115,6 +115,7 @@ MonoBehaviour:
   azucar: 1
   grasa: 0
   calorias: 74
+  stamina: 5
 --- !u!212 &212171280912873018
 SpriteRenderer:
   m_ObjectHideFlags: 1

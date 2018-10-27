@@ -34,7 +34,8 @@ public class pointSystem : MonoBehaviour {
          lifeStats.FindObjectOfType<lifeStats>().calorias += col.gameObject.GetComponent<FoodStat>().calorias; // Calorias
          lifeStats.FindObjectOfType<lifeStats>().azucar += col.gameObject.GetComponent<FoodStat>().azucar; // Azucar
          lifeStats.FindObjectOfType<lifeStats>().grasa += col.gameObject.GetComponent<FoodStat>().grasa; // Grasa
-         Destroy(col.gameObject);
+         lifeStats.FindObjectOfType<lifeStats>().stamina += col.gameObject.GetComponent<FoodStat>().stamina; // Grasa
+        Destroy(col.gameObject);
     }
 
 }

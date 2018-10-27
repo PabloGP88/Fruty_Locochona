@@ -103,6 +103,7 @@ MonoBehaviour:
   azucar: 2
   grasa: 10
   calorias: 250
+  stamina: 10
 --- !u!114 &114916614524666632
 MonoBehaviour:
   m_ObjectHideFlags: 1

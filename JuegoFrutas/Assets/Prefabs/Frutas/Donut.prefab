@@ -90,9 +90,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ca23b5e13842d34e8382a542bdfc6da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  azucar: 0
+  azucar: 15
   grasa: 16
   calorias: 250
+  stamina: 10
 --- !u!114 &114952546423097564
 MonoBehaviour:
   m_ObjectHideFlags: 1
