@@ -10,7 +10,10 @@ public class lifeStats : MonoBehaviour {
     public int grasa;
     public int calorias;
     public int stamina;
-
+    [Header("ImagenesEnfermedades")]
+    public GameObject imagenDiabetes;
+    public GameObject imagenColesterol;
+    public GameObject imagenObesidad;
 
     [Header("Enfermedades")]
     public int grasaMax;
@@ -50,22 +53,26 @@ public class lifeStats : MonoBehaviour {
     {
         if (azucar > azucarMax)
         {
-          //  diabetesText.enabled = true;
-            diabetes = true;
+            //  diabetesText.enabled = true;
+            imagenDiabetes.GetComponent<Image>().color = Color.white;
+              diabetes = true;
         }
         if (grasa > grasaMax)
         {
-           // colesterolText.enabled = true;
+            imagenColesterol.GetComponent<Image>().color = Color.white;
+            // colesterolText.enabled = true;
             colesterol = true;
         }
         if (calorias > caloriasMax)
         {
+            imagenObesidad.GetComponent<Image>().color = Color.white;
             // obesidadText.enabled = true;
             IncreaseSpeed.FindObjectOfType<IncreaseSpeed>().limite = 7;
             obesidad = true;
         }
         if (calorias < caloriasMax)
         {
+            imagenObesidad.GetComponent<Image>().color = Color.gray;
             // obesidadText.enabled = false;
             IncreaseSpeed.FindObjectOfType<IncreaseSpeed>().limite = 5;
             obesidad = false;
