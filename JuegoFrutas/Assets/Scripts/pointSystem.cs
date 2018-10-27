@@ -6,11 +6,13 @@ public class pointSystem : MonoBehaviour {
 
     public int points;
 
-   
+    [SerializeField] AudioClip[] effects;
+
+    AudioSource audioSource;
 
 	// Use this for initialization
 	void Start () {
-		
+        audioSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -22,11 +24,15 @@ public class pointSystem : MonoBehaviour {
     {
         if (col.gameObject.tag == "Healthy")
         {
+            AudioClip clip = effects[(int)Random.Range(1,effects.Length)];
+            audioSource.PlayOneShot(clip);
             points += 1;
         }
 
         if (col.gameObject.tag == "Chatarra")
         {
+            AudioClip clip = effects[0];
+            audioSource.PlayOneShot(clip);
             lifeStats.FindObjectOfType<lifeStats>().vida -= 1; 
         }
 
