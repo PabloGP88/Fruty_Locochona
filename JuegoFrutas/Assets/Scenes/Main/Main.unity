@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 41062630}
   - component: {fileID: 41062629}
   - component: {fileID: 41062632}
+  - component: {fileID: 41062633}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -203,6 +204,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: 1028397b2cd504041891d3d99482c52d, type: 2}
+--- !u!114 &41062633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 41062628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5e76c44afb623e47b1bc2e5afe10f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camTransform: {fileID: 41062631}
+  shakeAmount: 0.05
+  decreaseFactor: 1
+  shake: 0
 --- !u!1 &85991019
 GameObject:
   m_ObjectHideFlags: 0
@@ -981,6 +997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25691785a2dca9439bd746873e82194, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  limite: 5
 --- !u!4 &765447120
 Transform:
   m_ObjectHideFlags: 0
@@ -1234,7 +1251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 245fa9ae34a47a24fb299b063394031c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restaCalorias: 5
+  restaCalorias: 10
   restaGrasa: 1
   restaStamina: 10
   particulaPesa: {fileID: 198799514126711996, guid: 8915487ca9347d4409bd9e827e2d7f0c,
@@ -1507,8 +1524,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 197cf02fe731044468ed3c6681c582e3, type: 3}
-  m_Color: {r: 0.4811321, g: 0.477226, b: 0.47432363, a: 1}
+  m_Sprite: {fileID: 21300000, guid: d62d07e922f195547bc15ed976265d15, type: 3}
+  m_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1525,8 +1542,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1203162920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1, y: 1.8, z: 100}
-  m_LocalScale: {x: 0.39749014, y: 0.5003489, z: 1}
+  m_LocalPosition: {x: 0.045, y: -0.012, z: 100}
+  m_LocalScale: {x: 0.38681355, y: 0.38526866, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
@@ -2856,6 +2873,21 @@ Prefab:
     - target: {fileID: 1451091981796172, guid: 61de566e211b75c40b12a7fc804af1ed, type: 2}
       propertyPath: m_Name
       value: Personaje
+      objectReference: {fileID: 0}
+    - target: {fileID: 114155818777449392, guid: 61de566e211b75c40b12a7fc804af1ed,
+        type: 2}
+      propertyPath: azucarMax
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 114155818777449392, guid: 61de566e211b75c40b12a7fc804af1ed,
+        type: 2}
+      propertyPath: caloriasMax
+      value: 2500
+      objectReference: {fileID: 0}
+    - target: {fileID: 114155818777449392, guid: 61de566e211b75c40b12a7fc804af1ed,
+        type: 2}
+      propertyPath: grasaMax
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61de566e211b75c40b12a7fc804af1ed, type: 2}

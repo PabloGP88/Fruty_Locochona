@@ -22,15 +22,13 @@ public class DoorScript : MonoBehaviour {
 
     private void Update()
     {
-        EnableDisableDoors();
+        EnableDisableDoorsSano();
 
         if (leftDoor == null || rightDoor == null)
         {
             ReCheckDoors();
         }
     }
-
-
 
     void ReCheckDoors()
     {
@@ -43,9 +41,10 @@ public class DoorScript : MonoBehaviour {
         Destroy(col.gameObject);
     }
 
-    void EnableDisableDoors()
+
+    void EnableDisableDoorsSano()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && cambio == false)
+        if (Input.GetKeyDown(KeyCode.Space) && cambio == false )
         {
             // Left Door
             leftDoor.GetComponent<BoxCollider2D>().enabled = true;
@@ -69,4 +68,5 @@ public class DoorScript : MonoBehaviour {
             cambio = false;
         }
     }
+
 }

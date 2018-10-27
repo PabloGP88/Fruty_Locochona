@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class IncreaseSpeed : MonoBehaviour {
-
+    public int limite = 5;
 	// Use this for initialization
 	void Start () {
 		
@@ -13,7 +13,7 @@ public class IncreaseSpeed : MonoBehaviour {
 	void Update () {
 
 
-        if (Time.deltaTime < 5){
+        if (Time.deltaTime < limite){
             Time.timeScale += 0.01f * Time.deltaTime;
         }
 	}
