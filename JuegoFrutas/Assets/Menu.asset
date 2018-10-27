@@ -320,11 +320,11 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       mode: 0
-      color: {r: 0, g: 0.2736156, b: 1, a: 1}
+      color: {r: 0, g: 0.15797268, b: 0.5754717, a: 1}
       center: {x: 0.5, y: 0.5}
-      intensity: 0.45
-      smoothness: 0.2
-      roundness: 1
+      intensity: 0.408
+      smoothness: 0.516
+      roundness: 0.942
       mask: {fileID: 0}
       opacity: 1
       rounded: 0
